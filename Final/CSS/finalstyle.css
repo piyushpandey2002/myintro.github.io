@@ -1,0 +1,233 @@
+
+@keyframes color {
+  0%   { background: #000000; }
+  20%  { background: #300c42; }
+  40%  { background: #104646; }
+  60%  { background: #013200; }
+  80%  { background: #2b2d07; }
+  90%  { background: #630a0a; }
+  100% { background: #000000; }
+}
+
+body {
+    margin-top: 0px;
+    text-align: center;
+    font-family: 'Raleway', Arial, sans-serif;
+    margin: 0px;
+    /* background-color:#000000; */
+    animation: color 9s infinite linear;
+}
+
+
+.colour {
+    height: 20px;
+    background-color: rgb(255, 174, 0);
+}
+
+.container {
+    position: relative;
+    padding-top: 25px;
+    background-color: rgb(0, 0, 0);
+    margin-top: 0px;
+    height: 676px;
+} 
+
+.top-cloud {    
+    position: absolute;
+    margin : 0 auto;
+    display: block;
+    left: 50px;
+    max-width: 300px;
+    height: auto;
+    opacity: 1;
+}
+
+.bottom-cloud {
+    position: absolute;
+    margin : auto 0;
+    right: 50px;
+    max-width: 300px;
+    height: auto;
+    opacity: 1;
+}
+
+
+
+.top-cloud:hover {
+    animation : rotation 7s infinite linear
+}
+.bottom-cloud:hover {
+    animation : rotation 7s infinite linear
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+
+
+.mid-img {
+    height: 450px;
+    transition: 1.2s;
+}
+
+.mid-img:hover {
+    transform: scale(1.05);
+    line-height: 4;
+}
+
+.piy {
+    font-size: 40px;
+    font-family: 'Press Start 2P', 'Orbitron', 'Great Vibes', 'Raleway', 'Arial', sans-serif;  
+    color: darkorange;
+    line-height: 2;
+    
+}
+
+.job {
+    font-size:25px;
+    font-family: 'Raleway', 'Arial', sans-serif;
+    font-weight: bold ;
+    color: darkorange;
+    line-height: 3;
+    
+}
+
+
+.line-1{
+    position: relative;
+    top: 50%;  
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+
+.container p {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid rgb(255, 255, 255); /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 4.5s steps(40)infinite,
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 60% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color:rgb(80, 249, 255) }
+}
+
+table {
+    color: darkorange;
+    border-collapse: separate;
+    border-spacing: 0 50px;
+    margin-top: 0px;
+    border-top: 0px;
+}
+
+td {
+    text-align:left;
+    font-weight: bolder ;
+}
+
+.end {
+    height: 50px;
+    width: 50px;
+}
+
+.bottom {
+
+    position: fixed;
+    margin-left: 5px;
+    margin-top: 150px;
+    
+}
+
+.me {
+    background-color: #e4d5a8;
+        border-style: groove;
+        border-color: aquamarine;
+        border-width: 10px;
+        border-radius: 200px;
+        transition: 0.3s;
+        width:250px;
+        height:250px;
+}
+
+.me:hover {
+    border-color: rgb(255, 202, 96);   
+}
+
+.intro_table {
+    transition: 1s;
+    border-spacing: 100px 0;
+    margin: 50px auto;
+
+}
+
+.intro_table:hover {
+    transform:scale(1.05);
+}
+
+td {
+    padding: 5px;
+    transition: 0.3s;
+}
+      
+td:hover {
+    transform:scale(1.03);
+}
+
+.p_intro {
+    
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width : 400px;
+} 
+
+.contact {
+    color: darkorange;
+    font-weight: bolder;
+    background-color:rgb(0, 0, 0);
+    line-height: 1.2;
+}
+
+.incontact {
+    margin-left: 50px;
+}
+
+
+.hrt{
+    background-color: rgb(255, 174, 0);
+    margin-bottom: 0px;
+    height : 20px;
+    padding-top: 1.25px;
+}
+
+
+
+hr {
+        height: 0px;   
+        border-style: dotted none none; 
+        width: 10%;
+        border-color: rgb(255, 255, 255);
+        border-width: 7px;  
+      }
